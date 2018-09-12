@@ -25,7 +25,7 @@ db( λ => {
 	app.use(middleware());
 
 	// api router
-	app.use('/api', api());
+	app.use('/api', api(λ));
 
 	app.server.listen(process.env.PORT || 8080);
 
